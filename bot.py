@@ -48,7 +48,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Если подписан и состоит в постбеках → сразу открываем доступ
     if status["subscribed"] and status["verif_joined"]:
         keyboard = InlineKeyboardMarkup([[
-            InlineKeyboardButton("Открыть игру", web_app={"url": "https://cruel-times-notice.loca.lt"}) 
+            InlineKeyboardButton("Открыть игру", web_app={"url": "https://telegram-game-bot-agfc.onrender.com"}) 
         ]])
         await update.message.reply_text("Доступ открыт!", reply_markup=keyboard)
         return
